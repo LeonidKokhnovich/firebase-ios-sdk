@@ -343,7 +343,7 @@ let package = Package(
     .target(
       name: "FirebaseAnalyticsTarget",
       dependencies: [.target(name: "FirebaseAnalyticsWrapper",
-                             condition: .when(platforms: [.iOS, .macCatalyst, .macOS, .tvOS]))],
+                             condition: .when(platforms: [.iOS, .macCatalyst, .macOS, .tvOS, .watchOS]))],
       path: "SwiftPM-PlatformExclude/FirebaseAnalyticsWrap"
     ),
 
